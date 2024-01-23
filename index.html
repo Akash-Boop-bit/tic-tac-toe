@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="heading1">
+        <h1 > Tic Tac Toe</h1>
+    </div>
+
+    <div class="main">
+        <div class="main1">
+            <div class="result">
+                <div class="player1">
+                    <p>Player 1</p>
+                    <p id="player1">0</p>
+                </div>
+                <div class="player2">
+                    <p>Player 2</p>
+                    <p id="player2">0</p>
+                </div>
+                <div class="draws">
+                    <p>Draws</p>
+                    <p id="draw">0</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="main2">
+            <div id="main2" class="main2-1">
+                <div class="line1">
+                    <div onclick="hello('1')" id="box1" class="box">
+                        <img id="img11" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img12" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                    <div onclick="hello('2')" id="box2" class="box">
+                        <img id="img21" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img22" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                    <div onclick="hello('3')" id="box3" class="box">
+                        <img id="img31" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img32" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                </div>
+                <div class="line2">
+                    <div onclick="hello('4')" id="box4" class="box">
+                        <img id="img41" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img42" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                    <div onclick="hello('5')" id="box5" class="box">
+                        <img id="img51" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img52" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                    <div onclick="hello('6')" id="box6" class="box">
+                        <img id="img61" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img62" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                </div>
+                <div class="line3">
+                    <div onclick="hello('7')" id="box7" class="box">
+                        <img id="img71" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img72" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                    <div onclick="hello('8')" id="box8" class="box">
+                        <img id="img81" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img82" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                    <div onclick="hello('9')" id="box9" class="box">
+                        <img id="img91" class="mainbox" src="images/cross.webp" alt="">
+                        <img id="img92" class="mainbox" src="images/zero.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <button id="newgame" class="new-game" onclick="newgame()">New Game</button>
+
+        </div>
+        <div id="game" class="main3">
+            <img class="gameover" src="images/gameover.jpg" alt=""><br>
+            <img id="playerimg1" class="playerimg1" src="images/player1.png" alt="">
+            <img id="playerimg2" class="playerimg2" src="images/player2.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="reset">
+        <button onclick="location.reload()">Reset</button>
+    </div>
+
+    <div class="buttons">
+        <button class="button" onclick="hello('1')">1</button>
+        <button class="button" onclick="hello('2')">2</button>
+        <button class="button" onclick="hello('3')">3</button>
+        <button class="button" onclick="hello('4')">4</button>
+        <button class="button" onclick="hello('5')">5</button>
+        <button class="button" onclick="hello('6')">6</button>
+        <button class="button" onclick="hello('7')">7</button>
+        <button class="button" onclick="hello('8')">8</button>
+        <button class="button" onclick="hello('9')">9</button>
+    </div>
+
+    <div class="last">
+        <p>Made By Akash Malik</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
